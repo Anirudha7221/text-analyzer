@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import React from "react";
+import Word_page from "./Components/Word_page";
+import Para_page from "./Components/Para_page";
+import Home from "./Components/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/wordpage" element={<Word_page />}></Route>
+            <Route path="/parapage" element={<Para_page />}></Route>
+        </Routes>
+    </BrowserRouter>
   );
 }
 
