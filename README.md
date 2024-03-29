@@ -1,3 +1,8 @@
+
+Live Deployed Link - https://wonderful-marigold-5418e2.netlify.app/wordpage
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
